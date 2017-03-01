@@ -3,6 +3,7 @@ function Contact(first, last) {
   'use strict';
   this.firstName = first;
   this.lastName = last;
+  this.addresses =[];
 }
 
 Contact.prototype.fullName = function () {
@@ -11,7 +12,7 @@ Contact.prototype.fullName = function () {
 
 // User Interface Logic
 $(document).ready(function () {
-  'use strict';
+  'use strict';s
   $("form#new-contact").submit(function (event) {
     event.preventDefault();
 
