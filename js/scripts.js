@@ -19,7 +19,25 @@ function Address(street, city, county) {
 // User Interface Logic
 $(document).ready(function() {
     'use strict';
-    s
+
+    $("#add-address").click(function() {
+        $("#new-addresses").append(
+            '<div class="new-address">' +
+            '<div class="form-group">' +
+            '<label for="new-street">Street</label>' +
+            '<input type="text" class="form-control" id="new-street">' +
+            '</div>' +
+            '<div class="form-group">' +
+            '<label for="new-city">City</label>' +
+            '<input type="text" class="form-control" id="new-city">' +
+            '</div>' +
+            '<div class="form-group">' +
+            '<label for="new-county">County</label>' +
+            '<input type="text" class="form-control" id="new-county">' +
+            '</div>' +
+            '</div>');
+    });
+
     $("form#new-contact").submit(function(event) {
         event.preventDefault();
 
