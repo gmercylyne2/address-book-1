@@ -10,3 +10,9 @@
 .contact:hover {
   text-decoration: underline;
 }
+
+.new-address {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid silver;
+}
